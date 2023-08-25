@@ -1,0 +1,12 @@
+<!-- busquedad de paises -->
+<!-- (keyup.enter)="emitValue(txtInput.value) -->
+<!-- emitValue lo envia al search-box.component.ts-->
+
+<input
+  type="text"
+  class="form-control"
+  [value]="initialValue"
+  [placeholder]="placeholder"
+  (keyup)="onKeyPress( txtInput.value )"
+  #txtInput
+>
